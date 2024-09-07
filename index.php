@@ -6,6 +6,7 @@
     <title>Store Management Software</title>
 </head>
 <body>
-    
+    <a href="add_category.php">Add Category</a>
+    <a href="list_of_category.php">List of Category</a>
 </body>
 </html>

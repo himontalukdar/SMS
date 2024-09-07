@@ -7,9 +7,8 @@ $database = 'store_sms';
 
 $conn =new mysqli($hostname, $username, $password, $database);
 
-if($conn){
-    echo 'ok';
-}else{
-    echo 'not ok';
+if($conn->connect_error){
+    die("Connection failed:" . $conn->connect_error);
 }
+
 ?>

@@ -19,7 +19,14 @@ require('connection.php');
     if (isset($_GET['category_name'])){
         $category_name      = $_GET['category_name'];
         $category_entrydate = $_GET['category_entrydate'];
-
+        
+        $sql ="INSERT INTO category (category_name,category_entrydate) VALUES ('$category_name', ' $category_entrydate')";
+       
+        if($conn->query($sql)=== TRUE){
+            echo 'New Record created successfully';
+        }else{
+            echo 'Unsuccessfully';
+        }
 
     }
             
