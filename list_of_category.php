@@ -16,13 +16,18 @@
        while($data =mysqli_fetch_assoc($query)){
             $category_name = $data['category_name'];
             $category_entrydate = $data['category_entrydate'];
-            echo "<tr></tr><td>$category_name</td><td>$category_entrydate</td><td>Edit</td></tr>";
+            echo "<tr>
+                    <td>$category_name</a></td>
+                    <td>$category_entrydate</td>
+                    <td><a href='edit_category.php'>Edit</a></td>
+                    </tr>";
 
        }
        
         echo "</table>";
        
     ?>
+    <a href=""></a>
     
 </body>
 </html>

@@ -8,5 +8,6 @@
 <body>
     <a href="add_category.php">Add Category</a>
     <a href="list_of_category.php">List of Category</a>
+    <a href="edit_category.php">Edit of Category</a>
 </body>
 </html>
