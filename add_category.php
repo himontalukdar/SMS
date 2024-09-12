@@ -31,7 +31,7 @@ require('connection.php');
     }
             
     ?>
-    <form action="add_category.php" method="get">
+    <form action="<?php $_SERVER['PHP_SELF'];?>" method="GET">
         Category : <br>
         <input type="text" name="category_name"><br><br>
         Category Entry Date : <br>

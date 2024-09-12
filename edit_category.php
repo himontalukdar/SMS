@@ -40,7 +40,7 @@
         } 
             
     ?>
-    <form action="edit_category.php" method="get">
+    <form action="<?php $_SERVER['PHP_SELF'];?>" method="GET">
         Category : <br>
         <input type="text" name="category_name" value="<?php echo $category_name?>"><br><br>
         Category Entry Date : <br>
